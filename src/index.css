@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=DynaPuff:wght@400..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(180deg, #040918 0%, #091540 100%);
+    background-repeat: no-repeat;
+}
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.light-theme-cards {
+    background-color: white !important;
+    color: hsl(227, 75%, 14%) !important;
+    border-color: hsl(0, 0%, 78%) !important;
+    transition: 0.5s;
+}
+.light-theme-cards-text {
+    color: hsl(227, 75%, 14%) !important;
+    transition: 0.5s;
+}
+.light-theme-buttons {
+    color: hsl(227, 75%, 14%) !important;
+    border-color: hsl(0, 0%, 78%) !important;
+    background-color: white !important;
+}
+.light-theme-buttons:hover {
+    background-color: hsl(0, 0%, 93%) !important;
+}
+.light-theme-buttons:focus {
+    background-color: hsl(0, 0%, 93%) !important;
+}
+.body-background-light-theme {
+    background-image: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    transition: 0.5s;
+}
+.titles-light-theme {
+    color: hsl(227, 75%, 14%) !important;
+    fill: hsl(227, 75%, 14%) !important;
+}
+.active {
+    display: block;
+}
+.inactive {
+    display: none;
+}
+.dark-theme-button {
+    background-color: hsl(0, 0%, 93%) !important;
+    border-color: hsl(0, 0%, 93%) !important;
+}
+.dark-theme-button:hover {
+    background-color: hsl(0, 0%, 78%) !important;
+    border-color: hsl(0, 0%, 78%) !important;
+}
