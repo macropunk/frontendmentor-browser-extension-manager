@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/frontendmentor-browser-extension-manager",
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true // ensures the folder is cleared before build
+  }
 })

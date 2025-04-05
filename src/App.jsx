@@ -40,12 +40,20 @@ function App() {
   
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch('data.json');
-      const result = await response.json();
-      setData(result)
+      try {
+        const response = await fetch('/frontendmentor-browser-extension-manager/data.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const result = await response.json();
+        console.log('Fetched data:', result); // Debugging log
+        setData(result);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
     }
-    fetchData()
-  }, [])
+    fetchData();
+  }, []);
 
   /* removes an extension when the delete button is clicked */
   function removeItem(event){
