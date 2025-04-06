@@ -7,6 +7,6 @@ export default defineConfig({
   base: "/frontendmentor-browser-extension-manager",
   build: {
     outDir: 'dist',
-    emptyOutDir: true // ensures the folder is cleared before build
+    emptyOutDir: true, // ensures the folder is cleared before build
   }
 })
