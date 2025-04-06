@@ -93,7 +93,7 @@ function App() {
 
   return (
     <>
-      <div style={{maxWidth: "1440px", margin: "0 auto"}}>
+      <div style={{maxWidth: "1300px", margin: "0 auto"}}>
         <Header changeTheme={chnageThemeStatus}/>
       </div>
       
