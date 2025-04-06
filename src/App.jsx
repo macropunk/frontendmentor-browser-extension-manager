@@ -41,7 +41,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/frontendmentor-browser-extension-manager/public/data.json');
+        const response = await fetch('/frontendmentor-browser-extension-manager/data.json');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
